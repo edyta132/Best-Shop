@@ -468,7 +468,7 @@ body {
     justify-content: center;
 }
 
-.pircing-list.yes::before {
+.pricing-list.yes::before {
     content: "";
     width: 11px;
     height: 11px;
@@ -477,7 +477,7 @@ body {
     display: block;
 }
 
-.pircing-list.no::before {
+.pricing-list.no::before {
     content: "";
     width: 11px;
     height: 11px;
