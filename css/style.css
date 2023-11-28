@@ -20,7 +20,7 @@ body {
 
 }
 
-.title,
+.hero-box-title,
 .section-title,
 .column-title,
 .column-subtitle {
@@ -28,7 +28,7 @@ body {
     font-weight: bold;
 }
 
-.title {
+.hero-box-title {
     font-size: 49px;
 }
 
@@ -676,6 +676,8 @@ body {
 
 .footer-logo {
     font-size: 26px;
+    display: block;
+    margin-bottom: 5px;
 }
 
 .footer-text {
