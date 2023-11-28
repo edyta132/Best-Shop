@@ -20,7 +20,7 @@ body {
 
 }
 
-.hero-box-title,
+.title,
 .section-title,
 .column-title,
 .column-subtitle {
@@ -28,7 +28,7 @@ body {
     font-weight: bold;
 }
 
-.hero-box-title {
+.title {
     font-size: 49px;
 }
 
