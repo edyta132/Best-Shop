@@ -5,5 +5,14 @@ function setHeaderSticky() {
 document.addEventListener("scroll", function() {
     setHeaderSticky();
 });
+makeBannerAnim();
+function makeBurger() {
+    const button = document.querySelector(".burger");
+    const menu = document.querySelector(".menu");
+    button.onclick = ()=>{
+        menu.classList.toggle("is-show");
+    };
+}
+makeBurger();
 
 //# sourceMappingURL=index.7c0ccee6.js.map
