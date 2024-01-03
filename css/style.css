@@ -24,7 +24,6 @@ body {
 .column-title,
 .column-subtitle {
     font-family: 'Raleway', sans-serif;
-    font-weight: bold;
 }
 
 .title {
@@ -150,7 +149,6 @@ body {
 
 .hero-box {
     text-align: center;
-    padding-top: 130px;
 }
 
 .hero-box-title {
@@ -160,7 +158,7 @@ body {
 
 .hero-box-text {
     font-size: 16px;
-    padding-bottom: 60px;
+    padding-bottom: 38px;
 }
 
 .hero-box-btn {}
@@ -170,6 +168,8 @@ body {
     background-position: center;
     background-size: cover;
     padding: 30px 0;
+    overflow: hidden;
+
 }
 
 .numbers {

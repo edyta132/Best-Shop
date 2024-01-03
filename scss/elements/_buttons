@@ -1,0 +1,32 @@
+.button {
+    text-decoration: none;
+    background: #08A6E4;
+    padding: 22px 155px;
+    border-radius: 40px;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+@media (width < 560px) {
+    .button {
+        padding: 22px 140px;
+    }
+}
+
+@media (width < 500px) {
+    .button {
+        padding: 22px 130px;
+    }
+}
+
+@media (width < 480px) {
+    .button {
+        padding: 22px 92px;
+    }
+}
+
+@media (width < 350px) {
+    .button {
+        padding: 22px 65px;
+    }
+}

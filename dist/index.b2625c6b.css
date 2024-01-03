@@ -20,7 +20,6 @@ body {
 
 .title, .section-title, .column-title, .column-subtitle {
   font-family: Raleway, sans-serif;
-  font-weight: bold;
 }
 
 .title {
@@ -138,7 +137,6 @@ body {
 
 .hero-box {
   text-align: center;
-  padding-top: 130px;
 }
 
 .hero-box-title {
@@ -147,7 +145,7 @@ body {
 }
 
 .hero-box-text {
-  padding-bottom: 60px;
+  padding-bottom: 38px;
   font-size: 16px;
 }
 
@@ -156,6 +154,7 @@ body {
   background-size: cover;
   width: 100%;
   padding: 30px 0;
+  overflow: hidden;
 }
 
 .numbers {
