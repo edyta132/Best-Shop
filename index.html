@@ -11,7 +11,7 @@
   <link
     href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700|Raleway:300,400,700,800&display=swap&subset=latin-ext"
     rel="stylesheet" />
-  <link rel="stylesheet" href="css/style.css">
+  <!-- <link rel="stylesheet" href="css/style.css"> -->
   <link rel="stylesheet" href="scss/main.scss">
 
 </head>
@@ -19,16 +19,18 @@
 <body>
 
   <header class="header">
-    <div class="container">
-      <a href="/" class="header-logo logo">
-        BestShop
-      </a>
-      <button class="burger">
-        <strong>Menu</strong>
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
+    <div class="header-cnt">
+
+      <div class="container">
+        <a href="/" class="header-logo logo">
+          BestShop
+        </a>
+        <button class="burger">
+          <span class="line_1"></span>
+          <span class="line_2"></span>
+          <span class="line_3"></span>
+        </button>
+      </div>
       <nav class="menu">
         <ul class="menu-list">
           <li class="menu-item">
@@ -109,7 +111,7 @@
   <article class="articles">
     <div class="articles-container">
 
-      <div class="articles-row">
+      <div class="articles-row red">
         <div class="article-column">
           <h2 class="article-column-title section-title">
             Be always first
@@ -126,7 +128,7 @@
         </div>
       </div>
 
-      <div class="articles-row">
+      <div class="articles-row blue">
         <div class="column-img-blue">
           <div class="column-img-blue-bg"></div>
           <img src="./assets/iPhone.png" alt="" class="img-blue">
@@ -169,15 +171,17 @@
       <div class="pricing-box">
         <div class="pricing-box-col pricing-box-col--red">
           <div class="pricing-content">
-            <h3 class="pricing-col-title column-title">
-              Basic
-            </h3>
-            <p class="pricing-col-price pricing-col-price--red">
-              $0
-            </p>
-            <h4 class="pricing-col-small pricing-col-small--red column-subtitle">
-              ///
-            </h4>
+            <div class="pricing-col-title">
+              <h3 class="column-title">
+                Basic
+              </h3>
+              <p class="pricing-col-price pricing-col-price--red">
+                $0
+              </p>
+              <h4 class="pricing-col-small pricing-col-small--red column-subtitle">
+                ///
+              </h4>
+            </div>
             <ul class="pricing-col-list">
               <li class="pricing-list yes">
                 100 MB HDD
@@ -203,15 +207,17 @@
 
         <div class="pricing-box-col pricing-box-col--blue">
           <div class="pricing-content">
-            <h3 class="pricing-col-title column-title">
-              Professional
-            </h3>
-            <p class="pricing-col-price pricing-col-price--blue">
-              $25
-            </p>
-            <h4 class="pricing-col-small column-subtitle">
-              Limited offer
-            </h4>
+            <div class="pricing-col-title">
+              <h3 class="column-title">
+                Professional
+              </h3>
+              <p class="pricing-col-price pricing-col-price--blue">
+                $25
+              </p>
+              <h4 class="pricing-col-small column-subtitle">
+                Limited offer
+              </h4>
+            </div>
             <ul class="pricing-col-list">
               <li class="pricing-list yes">
                 500 MB HDD
@@ -237,15 +243,17 @@
 
         <div class="pricing-box-col pricing-box-col--green">
           <div class="pricing-content">
-            <h3 class="pricing-col-title column-title">
-              Premium
-            </h3>
-            <p class="pricing-col-price pricing-col-price--green">
-              $60
-            </p>
-            <h4 class="pricing-col-small column-subtitle">
-              Limited offer
-            </h4>
+            <div class="pricing-col-title">
+              <h3 class="column-title">
+                Premium
+              </h3>
+              <p class="pricing-col-price pricing-col-price--green">
+                $60
+              </p>
+              <h4 class="pricing-col-small column-subtitle">
+                Limited offer
+              </h4>
+            </div>
             <ul class="pricing-col-list">
               <li class="pricing-list yes">
                 2 GB HDD

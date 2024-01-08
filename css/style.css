@@ -180,10 +180,10 @@ body {
 .numbers-title {}
 
 .numbers-box {
-    width: 800px;
     margin: 100px auto;
     display: flex;
-    justify-content: space-between;
+    gap: 185px;
+    justify-content: center;
 }
 
 .numbers-box-col {}
@@ -238,13 +238,11 @@ body {
 }
 
 .articles-container {
-    width: 1124px;
     margin: 0 auto;
     padding: 105px 0;
 }
 
 .articles-row {
-    height: 370px;
     display: flex;
     background-color: #FFFFFF;
     padding: 36px;
@@ -252,12 +250,9 @@ body {
     margin-bottom: 37px;
     border: 1px solid #E8E9ED;
     border-radius: 5px;
-
-
 }
 
 .article-column {
-    width: 416px;
     margin-top: 60px;
 
 }
@@ -297,13 +292,12 @@ body {
 
 .img-red {
     width: 386px;
-    height: 220px;
+    height: auto;
     background-size: cover;
     position: relative;
 }
 
 .article-column--blue {
-    width: 416px;
     margin-top: 26px;
 }
 
@@ -341,8 +335,6 @@ body {
 }
 
 .column-img-green {
-    width: 440px;
-    height: 370px;
     background: var(--color-green);
     border: 1px solid #E8E9ED;
     display: flex;
@@ -359,10 +351,8 @@ body {
 }
 
 .articles-row-green {
-    height: 370px;
     display: flex;
     background-color: #F7F7F7;
-    justify-content: space-between;
     border: 0px;
 
 }
@@ -370,7 +360,6 @@ body {
 .article-column-green {
     background: #FFFFFF;
     border: 1px solid #E8E9ED;
-    width: 623px;
     padding-left: 36px;
     padding-top: 64px;
     border-radius: 5px;
@@ -383,9 +372,8 @@ body {
 }
 
 .pricing-container {
-    width: 1266px;
-    height: 616px;
-    margin: 100px auto;
+
+    margin: 0px auto;
 }
 
 .pricing-title {}
@@ -686,6 +674,4 @@ body {
 
 .footer-icons {}
 
-.social-media-icon {
-    margin-left: 20px;
-}
+.social-media-icon {}

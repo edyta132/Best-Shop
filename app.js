@@ -8,17 +8,16 @@ document.addEventListener('scroll', function () {
     setHeaderSticky();
 });
 
-makeBannerAnim();
 
 function makeBurger() {
     const button = document.querySelector(".burger");
     const menu = document.querySelector(".menu");
-
+    console.log(button)
     button.onclick = () => {
         menu.classList.toggle("is-show");
+        button.classList.toggle("burger-open");
     }
 }
 
 makeBurger();
-
 

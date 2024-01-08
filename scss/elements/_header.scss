@@ -1,23 +1,25 @@
 .header {
     width: 100%;
-    height: 70px;
-    display: flex;
-    box-shadow: 0px 3px 6px #00000029;
     position: fixed;
     top: 0;
     left: 0;
     z-index: 1;
+}
 
-    .container {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
+.header-cnt {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    box-shadow: 0px 3px 6px #00000029;
+    width: 100%;
+    background: #FFFFFF;
+    height: 70px;
+
 }
 
 .header.is-sticky {
     background: #FFFFFF;
-    height: 70px;
     box-shadow: 0 3px 20px #00000029;
 }
 
@@ -60,6 +62,7 @@
     padding: 0 10px;
     text-decoration: none;
     position: relative;
+    white-space: nowrap;
 }
 
 
@@ -102,9 +105,53 @@
         background: $color-primary;
         height: 4px;
         width: 35px;
+    }
+
+    .line_1 {
+        transition: transform 0.4s ease-in-out;
+    }
+
+    .line_2 {
+        transition: transform 0.2s ease-in-out;
+    }
+
+    .line_3 {
+        transition: transform 0.4s ease-in-out;
 
     }
 }
+
+.burger-open {
+    width: 50px;
+    height: 50px;
+    background: none;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 4px;
+    cursor: pointer;
+    display: none;
+
+
+    .line_1 {
+        transform: rotate(45deg) translate(8px, 8px);
+        transition: transform 0.4s ease-in-out;
+    }
+
+    .line_2 {
+        transform: scaleY(0);
+        transition: transform 0.2s ease-in-out;
+    }
+
+    .line_3 {
+        transform: rotate(-45deg) translate(2px, -5px);
+        transition: transform 0.4s ease-in-out;
+
+    }
+}
+
 
 @media (width < 780px) {
     .burger {
@@ -112,17 +159,18 @@
     }
 
     .menu {
-        position: fixed;
+        // position: fixed;
         left: 0;
-        top: 0;
-        width: 300px;
-        height: 100%;
+        top: 100%;
+        width: 100%;
+        position: absolute;
+        // height: auto;
         background: #fff;
-        box-shadow: 2px 0 10px rgba(#000, 0.3);
-        padding: 20px;
-        box-sizing: border-box;
-        translate: -110% 0;
+        box-shadow: 2px 0 20px rgba(#000, 0.3);
+        padding: 70px 20px;
+        translate: 0 -110%;
         transition: 0.2s translate;
+        z-index: -1;
     }
 
     .menu.is-show {
@@ -131,5 +179,19 @@
 
     .menu-list {
         flex-direction: column;
+        gap: 14px;
+        height: auto;
+
+        align-items: flex-start;
+    }
+
+    .menu-link::after {
+        background: transparent;
+    }
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
     }
 }

@@ -1,0 +1,116 @@
+.numbers {
+    padding-top: 100px;
+    text-align: center;
+
+    @media (width < 890px) {
+        padding-top: 60px;
+    }
+
+    @media (width < 650px) {
+        padding-top: 30px;
+    }
+}
+
+.numbers-title {}
+
+.numbers-box {
+    padding: 0 230px;
+    margin: 100px auto;
+    display: flex;
+    gap: 185px;
+    justify-content: center;
+
+}
+
+@media (width < 890px) {
+    .numbers-box {
+        padding-left: 150px;
+        padding-right: 150px;
+        gap: 100px
+    }
+
+    .numbers-title {
+        padding-left: 150px;
+        padding-right: 150px;
+    }
+
+}
+
+
+
+@media (width < 650px) {
+    .numbers-box {
+        margin-top: 40px;
+        gap: 85px;
+    }
+
+    .number-title {
+        padding-left: 36px;
+        padding-right: 36px;
+        line-height: 35px;
+        font-size: 30px;
+    }
+}
+
+
+.numbers-box-col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.numbers-box-title {
+    font-size: 20px;
+    font-weight: 900;
+    margin-top: 10px;
+    margin-bottom: 19px;
+    letter-spacing: 5px;
+}
+
+.numbers-box-text {
+    font-size: 17px;
+    color: $text-color-secondary;
+    line-height: 19px;
+}
+
+.numbers-box-icons {
+    position: relative;
+}
+
+.wheel {
+    width: 63px;
+    height: 63px;
+    border-radius: 50%;
+
+}
+
+.wheel.red {
+    background: $color-redish;
+}
+
+.wheel.blue {
+    background: $color-primary;
+}
+
+.wheel.green {
+    background-color: $color-green;
+}
+
+.icon {
+    position: absolute;
+    top: 50%;
+    left: 30px;
+    transform: translateY(-50%);
+
+}
+
+@media (width < 600px) {
+    .numbers-box {
+        flex-direction: column;
+        margin-top: 40px;
+        gap: 35px;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+}
